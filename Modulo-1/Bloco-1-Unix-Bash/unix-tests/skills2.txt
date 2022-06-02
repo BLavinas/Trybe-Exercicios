@@ -1,0 +1,7 @@
+Bash
+Desenvolvimento
+Fundamentos
+Internet
+Logica
+Programação
+Unix
