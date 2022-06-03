@@ -6,3 +6,4 @@ CSS
 JavaScript
 Python
 React
+VPS
