@@ -6,3 +6,6 @@ CSS
 JavaScript
 Python
 React
+TypeScript
+Deployment
+VPS
