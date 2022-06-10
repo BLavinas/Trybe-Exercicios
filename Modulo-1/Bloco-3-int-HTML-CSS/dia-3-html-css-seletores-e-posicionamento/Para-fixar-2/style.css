@@ -1,0 +1,25 @@
+div:hover{
+    border: 1px solid red;
+}
+.primaria {
+    background-color: aqua;
+}
+.secundaria {
+    background-color: blueviolet;
+}
+.complementar {
+    background-color: brown;
+    font-size: 30px;
+}
+.escura {
+    background-color: darkslategray;
+}
+.clara {
+    background-color: bisque;
+}
+h3 {
+    font-style: inherit;
+}
+.italic {
+    font-style: italic;
+}
