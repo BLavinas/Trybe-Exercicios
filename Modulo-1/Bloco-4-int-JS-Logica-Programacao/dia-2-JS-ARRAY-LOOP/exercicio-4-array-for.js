@@ -8,3 +8,9 @@ for (i = 0; i < numbers.length; i += 1) {
 
 console.log("Total soma dos números:", somaNumeros);
 console.log("A média aritmética é:", mediaNumeros);
+
+if (mediaNumeros > 20) {
+  console.log("A média é maior que 20");
+} else {
+  console.log("A média é menor ou igual a 20");
+}
