@@ -1,4 +1,4 @@
-let chessPiece = "Rook".toLowerCase();
+let chessPiece = "knight".toLowerCase();
 switch (chessPiece) {
     case "rook":
         console.log("The rook may move forward, backward, left or right.");
