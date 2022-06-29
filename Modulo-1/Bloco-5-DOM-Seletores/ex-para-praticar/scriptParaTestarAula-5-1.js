@@ -1,0 +1,5 @@
+document.getElementById("page-title").innerText = "Senhor dos Aneis"
+document.getElementById("paragraph").style.color = "#BF553F"
+document.getElementById("subtitle").style.backgroundColor = "purple"
+document.getElementsByClassName('paragraphs')[0].style.color = "green"
+document.getElementsByTagName('h4')[0].style.color = "blue"
