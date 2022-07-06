@@ -127,7 +127,7 @@ changeFriday(decemberFriday);
 function zoomText() {
 const decemberDays = document.getElementById('days');
 decemberDays.addEventListener('mouseover', function (event) {
-  event.target.style.fontSize = '50px'
+  event.target.style.fontSize = '2em'
 })
   }
 
@@ -160,32 +160,31 @@ calendryTasks('Estudar!!!')
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks"
 
-function colorTask(color) {
-  const getFatherTask = document.getElementsByClassName('my-tasks')[0];
-  const legendaTarefa = document.createElement('div');
-  legendaTarefa.className = 'task';
-  legendaTarefa.style.backgroundColor = color;
-  getFatherTask.appendChild(legendaTarefa);
+function colorLegend(color) {
+const getFatherLegend = document.querySelector('.my-tasks');
+const legend = document.createElement('div');
+legend.style.backgroundColor = color;
+legend.classList.add('task')
+getFatherLegend.appendChild(legend);
 }
-colorTask('purple')
-
+colorLegend('purple')
 // 🚀 Exercício 9:
 // Implemente uma função que selecione uma tarefa.
 // Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada.
 // Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
 
-function selectTask() {
-  const selecionarLegenda = document.getElementsByClassName('task selected');
-  const legendaClass = document.getElementsByClassName('task')[0];
-    legendaClass.addEventListener('click', function (event) {
-   if (selecionarLegenda.length === 0) {
-    event.target.className = 'task selected';
-   } else {
-     event.target.className = 'task'
-   }
-  })
-}
-selectTask()
+  function selectTask() {
+    const selecionarLegenda = document.getElementsByClassName('task selected');
+    const legendaClass = document.getElementsByClassName('task')[0];
+      legendaClass.addEventListener('click', function (event) {
+     if (selecionarLegenda.length === 0) {
+      event.target.className = 'task selected';
+     } else {
+       event.target.className = 'task'
+     }
+    })
+  }
+  selectTask()
 
 // 🚀 Exercício 10:
 // Implemente uma função que atribua a cor da tarefa ao dia do calendário.
