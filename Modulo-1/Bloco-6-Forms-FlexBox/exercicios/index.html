@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Formulário Concurso de Viagem</h1>
+      <br />
+      <section>
+        <form action="" method="get">
+          <label for="fullName">Digite seu nome completo</label>
+          <input
+            placeholder="Nome Completo"
+            minlength="10"
+            maxlength="40"
+            type="text"
+            name="fullName"
+            id="fullName"
+          />
+          <label for="userEmail">Digite seu e-mail</label>
+          <input
+            minlength="10"
+            maxlength="50"
+            placeholder="Digite seu e-mail aqui"
+            type="email"
+            name="userEmail"
+            id="userEmail"
+          />
+          <br />
+          <br />
+          <label for="destiny"
+            >Qual o seu destino preferido? <br />
+            <input type="radio" name="destiny" id="destiny" />Cidade
+          </label>
+          <label for="destiny2">
+            <input type="radio" name="destiny" id="destiny2" />Campo
+          </label>
+          <label for="destiny3">
+            <input type="radio" name="destiny" id="destiny3" />Praia
+          </label>
+          <label for="destiny4">
+            <input type="radio" name="destiny" id="destiny4" />Montanhas
+          </label>
+          <br />
+          <br />
+          <label for="resume"
+            >Escreva o porque você deveria ganhar o concurso</label
+          >
+          <textarea
+            maxlength="500"
+            placeholder="Digite aqui por que você deveria ganhar o concurso"
+            name="resume"
+            id="resume"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <br />
+          <label for="bestDate">Qual a melhor data para sua viagem?</label>
+          <input placeholder="" type="date" name="bestDate" id="bestDate" />
+          <br />
+          <br />
+          <label for="newsLetter"
+            >Clique aqui para receber outras incríveis oportunidades oferecidas
+            pela Trybe?
+            <input type="checkbox" name="newsLetter" id="newsLetter" />
+          </label>
+          <br />
+          <br />
+          <label for="agreeImages"
+            >Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.
+            <input type="checkbox" name="agreeImages" id="agreeImages" />
+          </label>
+          <br />
+          <br />
+          <button id="submitButton" type="submit">Enviar Formulário</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
