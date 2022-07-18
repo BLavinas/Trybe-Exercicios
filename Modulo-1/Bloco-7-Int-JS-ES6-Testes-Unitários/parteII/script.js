@@ -1,41 +1,43 @@
-//Exercicio 1
+// Exercicio 1
 // const fatorial = (number) => {
 //   let result = 1;
 //   if (number === 0 || number === 1) return 1;
 //   for (i = number; i > 1; i -= 1) {
 //     number--;
-//     result = result * number;
+//     result *= number;
 //   }
 //   return result;
 // };
 // console.log(fatorial(4));
 
 //Exercicio 2
+//Retorna maior palavra
 
-// const longestWord = (string) => {
-//   let stringToArray = string.split(" ");
-//   let biggestWord = stringToArray[0];
-//   for (let i = 0; i < stringToArray.length; i += 1) {
-//     if (stringToArray[i].length > biggestWord.length) {
-//       biggestWord = stringToArray[i];
-//     }
-//   }
-//   return biggestWord;
-// };
-// console.log(
-//   longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")
-// );
-
-// "Antônio foi no banheiro e não sabemos o que aconteceu";retorna 'aconteceu'
+const longestWord = (string) => {
+  let stringToArray = string.split(" "); //transforma string em array de string
+  let biggestWord = stringToArray[0];
+  for (let i = 0; i < stringToArray.length; i += 1) {
+    if (stringToArray[i].length > biggestWord.length) {
+      //condição para verificar se palavra que esta sendo iterada é maior que palavra deifinida em biggestWord
+      biggestWord = stringToArray[i];
+    }
+  }
+  return biggestWord;
+};
+console.log(
+  longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")
+);
 
 //Exercicio 3
-// const btnClick = document.getElementById("btn-countClick");
-// const textCount = document.getElementById("text");
-// let clickCount = 0;
-// btnClick.addEventListener(
-//   "click",
-//   () => (textCount.innerHTML = clickCount += 1)
-// );
+//Contando numero de cliques em botão
+const btnClick = document.getElementById("btn-countClick"); //captura elemento botão
+const textCount = document.getElementById("text"); //captura elemento que vai apresentar cliques contados no html
+let clickCount = 0; //definindo contador de cliques como  0
+btnClick.addEventListener(
+  //escutador de eventos 'click' com arrow function.
+  "click",
+  () => (textCount.innerHTML = clickCount += 1) //atribui + 1 ao contador cada vez que é clicado e este valor é atribuido ao texto html
+);
 
 //Exercicio 4
 //Função para mudar letra para nome:
