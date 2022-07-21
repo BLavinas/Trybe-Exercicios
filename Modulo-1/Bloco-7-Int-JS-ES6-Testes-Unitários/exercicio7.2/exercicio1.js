@@ -1,8 +1,11 @@
 const verifyIsNumber = (value1, value2) => {
+  //função para verificar se é número ou esta vazio e jogar erro no 'pra cima'.
   if (!value1 || !value2) {
-    throw new Error("Você deve preencher este espaço");
+    //se não é um valor, ou seja, está em branco.
+    throw new Error("Você deve preencher este espaço"); //joga erro no 'pra cima'
   }
   if (isNaN(value1) || isNaN(value2)) {
+    //se não for número, jogar erro para 'cima' isNaN -> função nativa do JS para verificar se não e um número
     throw new Error("Você deve usar apenas números");
   }
 };
